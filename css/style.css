@@ -33,7 +33,7 @@ header > h1 {
   font-size: 50px;
   padding: 0;
   margin: 0;
-  filter: drop-shadow(2px 2px 8px black);
+  filter: drop-shadow(2px 2px 8px #00000046);
 }
 
 header a {
@@ -45,18 +45,24 @@ header > h3 {
   font-size: 17px;
   padding: 0;
   margin: 0;
-  filter: drop-shadow(2px 2px 8px black);
+  filter: drop-shadow(2px 2px 8px #00000046);
 }
 
 header > p {
   font-size: 20px;
   padding: 0;
-  filter: drop-shadow(2px 2px 8px black);
+  filter: drop-shadow(2px 2px 8px #00000046);
 }
 
-header > svg {
+nav {
+  background-color: #00000017;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  backdrop-filter: blur(8px);
+  position: fixed;
+  transition: background-color 600ms;
 }
-
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -66,34 +72,12 @@ nav ul {
   -webkit-backdrop-filter: blur(10px);
 }
 
-nav {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
-  background-color: #000000b9;
-}
-
 /*
 nav.scrolled_by
 */
 
 nav.scrolled_by {
-  animation: navbar_fade 300ms ease-in-out 0s 1 forwards;
-}
-
-@keyframes navbar_fade {
-  from {
-    background-color: #0000008a;
-  }
-  to {
-    background-color: #00000060;
-  }
-}
-
-nav {
-  z-index: 1;
-  background-color: #0000008a;
-  width: 100%;
+  background-color: #00000098;
 }
 
 nav li {
@@ -124,7 +108,7 @@ nav li.active {
 }
 
 #arrow {
-  animation: arrow_animation 0.8s infinite ease-in-out 2s alternate;
+  animation: arrow_animation 0.8s infinite ease-in-out 0.4s alternate;
   filter: drop-shadow(2px 2px 8px black);
   height: 50px;
   filter: invert(100%);
@@ -141,8 +125,29 @@ nav li.active {
 
 #about {
   text-align: center;
+  margin-bottom: 40px;
 }
 .narrow {
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
+}
+
+footer {
+  background-color: #000000ee;
+  color: white;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer > p {
+  margin: 0;
+}
+
+footer > h1 {
+  margin: 5px;
+  font-size: 20px;
+  font-weight: 400;
 }
