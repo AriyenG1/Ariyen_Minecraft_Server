@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,900&display=swap");
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0 !important;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  --webkit-scroll-behavior: smooth;
+}
+
+header {
+  height: 100vh;
+  background-image: url(https://www.pcgamesn.com/wp-content/uploads/2020/05/minecraft-shaders-nostalgia.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: unset;
+
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  color: white;
+  flex-direction: column;
+}
+
+header > h1 {
+  font-size: 50px;
+  padding: 0;
+  margin: 0;
+  filter: drop-shadow(2px 2px 8px black);
+}
+
+header a {
+  text-decoration: underline;
+  color: white;
+}
+
+header > h3 {
+  font-size: 17px;
+  padding: 0;
+  margin: 0;
+  filter: drop-shadow(2px 2px 8px black);
+}
+
+header > p {
+  font-size: 20px;
+  padding: 0;
+  filter: drop-shadow(2px 2px 8px black);
+}
+
+header > svg {
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  background-color: #000000b9;
+}
+
+/*
+nav.scrolled_by
+*/
+
+nav.scrolled_by {
+  animation: navbar_fade 300ms ease-in-out 0s 1 forwards;
+}
+
+@keyframes navbar_fade {
+  from {
+    background-color: #0000008a;
+  }
+  to {
+    background-color: #00000060;
+  }
+}
+
+nav {
+  z-index: 1;
+  background-color: #0000008a;
+  width: 100%;
+}
+
+nav li {
+  float: left;
+  box-sizing: border-box;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid transparent;
+}
+
+nav li:last-child {
+  float: right;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 9px 16px;
+  text-decoration: none;
+}
+
+nav li:hover {
+  background-color: #0000006b;
+}
+
+nav li.active {
+  border-bottom: 3px solid white;
+}
+
+#arrow {
+  animation: arrow_animation 0.8s infinite ease-in-out 2s alternate;
+  filter: drop-shadow(2px 2px 8px black);
+  height: 50px;
+  filter: invert(100%);
+}
+
+@keyframes arrow_animation {
+  25% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+#about {
+  text-align: center;
+}
+.narrow {
+  max-width: 800px;
+  margin: 0 auto;
+}
