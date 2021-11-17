@@ -1,10 +1,16 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "jtp_firebase",
     "ignore": [
       "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
+      "/.*",
+      "/node_modules/"
+    ],
+    "rewrites": [
+      {
+        "source": "",
+        "destination": "/html/index.html"
+      }
     ]
   }
 }
