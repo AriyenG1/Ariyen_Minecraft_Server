@@ -1,92 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href=" css/style.css" />
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.4.1/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.4.1/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.4.1/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.4.1/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.4.1/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.4.1/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/9.4.1/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.4.1/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/9.4.1/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/9.4.1/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style>
   </head>
   <body>
-      <nav class="nav">
-        <ul>
-          <li class="active"><a href="index.html">Start</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
-            >News</a></li>
-        <li><a href="connect.html">Connect</a></li>
-        </ul>
-      </nav>
-    <header>
-      <h1>Our minecraft server</h1>
-      <p>
-        A Minecraft Server for everyone,
-        <a href="connect.html">Click Here To Connect</a>
-        <br><br>
-        <h3>Press the arrow for more information</h3>
-      </p>
-      <a href="#about">
-        <svg
-          href="#about"
-          id="arrow"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 129 129"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          enable-background="new 0 0 129 129"
-        >
-          <g>
-            <path
-              d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"
-            />
-          </g>
-        </svg>
-      </a>
-    </header>
-    <div id="about" class="narrow">
-      <h1>About the server</h1>
-      <p>
-        Alvecraft is a survival server that offers ranks and extra /sethomes for voting, grief protection, custom player shops and friendly staff!
+    <div id="message">
+      <h2>Welcome</h2>
+      <h1>Firebase Hosting Setup Complete</h1>
+      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
+      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    </div>
+    <p id="load">Firebase SDK Loading&hellip;</p>
 
-        We preserve your survival experience, and do not allow raiding or griefing, which means all your builds are completely safe. If you like pure survival, this is the server for you!
-        
-        Each vote gets you closer to the next rank up, and each new rank gets you an extra /sethome.
-        
-        Use the wild warp waterfall at spawn to get far away and start your game! It sends you somewhere within a 20,000 block radius of spawn.
-        
-        The world border is 100,000 blocks so there are plenty of unexplored biomes to discover and build in!
-        
-        Also make sure to visit our player shops, where you can try your hand at making your own fortune by trading with other players.
-      </p>
-    </div>
-    <div id="rules">
-      <div>
-      <h2>Server Rules:</h2>
-        <ul>
-        <li>Rule Bending, Misinterpreting, finding loopholes or warping the meaning of the rules for an advantage is not permitted. In such cases, the situation will be reviewed by higher staff and appropriate punishments will be given.
-        <br><br></li>
-        <li> Automatic punishment system
-        (2 Warnings -> Kick -> 24 Ban)
-        If you receive 3 Warnings within 7 days, you will be automatically kicked. Your 4th warning will result in a 24 ban. Ban lengths will continue to increase. All warnings are removed after 7 days.
-        <br><br></li>
-        <li> Spam/Command Spam
-        (Warning -> 30m Mute -> 1h Mute -> 12h Mute -> 3d Mute -> 7d Mute -> Permanent Mute)
-        Repeating the same phrase or commands (such as /afk) multiple times. Command spam will be replaced with a ban instead of a mute.
-        <br><br></li>
-        <li> Persistently speaking a foreign language
-        (Warning -> 15m mute -> 30min mute -> 3h mute -> 6h mute -> 12h mute)
-        Speaking a foreign language in public chats. We use American English as official language. You are allowed to speak your native language in /team chat and /msg.
-        <br><br></li>
-        <li> Inappropriate language
-        (Verbal Warning -> Warning -> 30m Mute -> 3h Mute -> 12h Mute -> 3d Mute -> 7d Mute -> Permanent Mute)
-        Bypassing the swear filter or making sexual comments and phrases.</li>
-      </ul>
-    </div>
-        <img class="steve" src="https://www.minecraft.net/content/dam/games/minecraft/marketplace/updates-catspandas_latest.jpg" alt="">
-    </div>
-    <footer>
-      <h1>See you on my server!</h1>
-      <p>alve.leuchoviussvaren@elev.ga.ntig.se | play.alve.dev</p>
-    </footer>
-    <script src="../js/script.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.firestore().doc('/foo/bar').get().then(() => { });
+        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
   </body>
 </html>
